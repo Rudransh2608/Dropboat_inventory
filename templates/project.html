@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/project.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  {% include "nav.html" %}
+    <div class="container">
+        <div class="box" id="form1">
+         <form method="POST">
+            {% csrf_token %}
+          <div class="heading">Add Projects !</div>
+          Project Name<br>
+          <input type="text" name="num" class="te"><br><br>
+          Project Quantity<br>
+          <input type="number" max="100" name="num2" class="te"><br><br>
+          Client Name<br>
+          <input type="text" name="num3" class="te"><br><br>
+          <button type="submit" class="button1">Add</button>
+         </form>
+        </div>
+        <div class="box" id="graphpie">
+                <div>
+                    <canvas id="myChart"></canvas>
+                  </div>
+                  
+                  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                  
+                  <script>
+                    const ctx = document.getElementById('myChart');
+                  
+                    new Chart(ctx, {
+                      type: 'pie',
+                      data: {
+                        labels: [{% for projects in project %}'{{ projects.name }}',{% endfor %}],
+                        datasets: [{
+                          label: 'Quantity',
+                          data: [{% for projects in project %}'{{ projects.quantity }}',{% endfor %}],
+                          borderWidth: 0,
+                          barThickness:40,
+                          backgroundColor:['rgba(199, 125, 255,0.5)',
+                          'rgba(19, 125, 255,0.5)',
+                          'rgba(255, 183, 3,0.5)',
+                          'rgba(251, 111, 146,0.5)',
+                          'rgba(82, 182, 154,0.5)',
+                          'rgba(84, 11, 14,0.5)'
+                        ],
+                          borderColor:('rgba(36, 0, 70,0.8)'),
+                          hoverBackgroundColor:['rgba(36, 0, 70,0.7)',
+                          'rgba(19, 125, 255,0.7)',
+                          'rgba(255, 183, 3,0.7)',
+                          'rgba(251, 111, 146,0.7)',
+                          'rgba(82, 182, 154,0.7)',
+                          'rgba(84, 11, 14,0.7)'
+                        ]
+                        }]
+                      },
+                      options: {
+                        scales: {
+                          y: {
+                            beginAtZero: true
+                          }
+                        }
+                      }
+                    });
+                  </script>
+    </div>
+    </div>
+    <div class="another">
+        <table class="table" >
+            <thead>
+              <tr>
+                <th scope="col" class="id">ID</th>
+                <th scope="col">NAME</th>
+                <th scope="col">QUANTITY</th>
+                <th scope="col">CLIENT</th>
+                <th scope="col">DELETE</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for projects in project %}
+              <tr>
+                <th scope="row">{{projects.id}}</th>
+                <td>{{ projects.name }}</td>
+                <td>{{ projects.quantity }}</td>
+                <td>{{ projects.clname }}</td>
+                <td><a class="btn btn-danger" href="/delete/{{projects.id}}">Delete</a></td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+    </div>
+    <script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+      }
+          </script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        .count{
+            margin-left: 120px;
+            translate:0px -60px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+   <div class="bigbox">
+    <div class="bigcontainer" id="ham">
+        <div class="box" id="welcome">Welcome {{user}} !</div>
+        <a href="/profile_user/"><div class="box">
+            <i class="fa-solid fa-user" id="iconc"></i>Profile</div></a>
+        <a href="/about_us/"><div class="box"><i class="fa-solid fa-circle-info" id="iconc"></i>About</div></a>
+        <a href="/help_center/"><div class="box"><i class="fa-regular fa-circle-question" id="iconc"></i>Help</div></a>
+        <a href="/"><div class="box"><i class="fa-solid fa-house" id="iconc"></i>Home</div></a>
+        <a href="/logout/"><div class="box"><i class="fa-solid fa-right-from-bracket" id="iconc"></i>Logout</div></a>
+    </div>
+    <div class="bigcontainer">
+        <div class="hi">
+      
+        {% if user.is_superuser %}
+        <div class="box1" id="new1">
+            <a href="/projects/"><div class="block">Projects
+                <div class="icon">
+                <span class="material-symbols-outlined">
+                        precision_manufacturing
+                    </span>
+            </div>
+            <div class="count">{{project_count}}</div>
+        </div></a>
+            <a href="/products/"><div class="block">Products
+                <div class="icon">
+                    <span class="material-symbols-outlined">
+                        category
+                        </span>
+                </div>
+                <div class="count">{{product_count}}</div>
+            </div></a>
+            <a href="/orders/"><div class="block">Orders
+                <div class="icon">
+                    <span class="material-symbols-outlined">
+                            task
+                        </span>
+                </div>
+                <div class="count">{{ order_count }}</div>
+            </div></a>
+            <a href="/staff/"><div class="block">Staff
+                <div class="icon">
+                    <span class="material-symbols-outlined">
+                        groups
+                        </span>
+                </div>
+                <div class="count">{{ staff_count }}</div>
+            </div></a>
+        </div>
+        <div class="box1" id="new2">
+            <div class="graph">
+                <div>
+                    <canvas id="myChart"></canvas>
+                  </div>
+                  
+                  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                  
+                  <script>
+                    const ctx = document.getElementById('myChart');
+                  
+                    new Chart(ctx, {
+                      type: 'bar',
+                      data: {
+                        labels: [{% for products in product %}'{{ products.pname }}',{% endfor %}],
+                        datasets: [{
+                          label: 'Quantity',
+                          data: [{% for products in product %}'{{ products.pquantity }}',{% endfor %}],
+                          borderWidth: 1,
+                          barThickness:40,
+                          backgroundColor:('rgba(199, 125, 255,0.2)'),
+                          borderColor:('rgba(36, 0, 70,0.8)'),
+                          hoverBackgroundColor:('rgba(36, 0, 70,0.7)')
+                        }]
+                      },
+                      options: {
+                        scales: {
+                          y: {
+                            beginAtZero: true
+                          }
+                        }
+                      }
+                    });
+                  </script>
+            </div>
+            <div class="graph">
+                <div>
+                    <canvas id="line-chart"></canvas>
+                </div>
+            </div>
+            <script
+                src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
+            <script>
+                new Chart(document.getElementById("line-chart"), {
+                    type : 'line',
+                    data : {
+                        labels : [{% for products in product %}'{{ products.pname }}',{% endfor %}],
+                        datasets : [
+                                {
+                                    data : [{% for products in product %}'{{ products.pquantity }}',{% endfor %}],
+                                    label : "Quantity",
+                                    borderColor : "#3cba9f",
+                                    fill : false,
+                                    borderWidth: 1
+                                },
+                                {
+                                    data : [{% for orders in order %}'{{ orders.oprice }}',{% endfor %}],
+                                    label : "Price",
+                                    borderColor : "#e43202",
+                                    fill : false,
+                                    borderWidth: 1
+                                } ]
+                    },
+                    options : {
+                        title : {
+                            display : true,
+                            text : 'Chart JS Multiple Lines Example'
+                        }
+                    }
+                });
+            </script>
+            </div>
+        </div>
+        </div>
+    </div>
+    {% endif %}
+    
+    {% include "staffonly.html "%}
+</body>
+</html>

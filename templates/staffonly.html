@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  .container{
+   display: flex;
+   margin-top: 70px;
+   height: 800px;
+  }
+  #form1{
+    box-shadow:13px 22px 35px 10px #8888887d;
+    width: 450px;
+    height: 500px;
+    margin-left: 40px;
+    padding: 30px;
+  }
+  #graphbar{
+    width:625px;
+    margin-top: 80px;
+    margin-left:30px;
+    height: 500px;
+  }
+  .te{
+    border-radius: 5px;
+    width: 300px;
+    height:40px;
+    border: 1px solid black;
+    margin-bottom: 23px;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+.heading{
+  font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    margin-bottom: 36px;
+}
+.button1{
+    margin-top: -5px;
+    background-color:rgb(162, 74, 229);
+    border:0px;
+    color: white;
+    width:120px;
+    height:35px;
+    border: 1px solid rgb(36, 0, 70);
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.button1:hover{
+    background-color:rgb(115, 15, 191) ;
+    transition: 0.2s ease-in-out;
+}
+</style>
+<body>
+  <div class="container">
+    <div class="graph" id="form1">
+        <form method="POST">
+            {% csrf_token %}
+          <div class="heading">Make Request !</div><br>
+          Products to Order<br>
+          <input type="text" name="num5" class="te"><br><br>
+          Price (max 200$) <br>
+          <input type="number" max="200" min="0" name="num6" class="te"><br><br>
+          <button type="submit" class="button1">Add</button>
+         </form>
+    </div>
+    <div class="graph" id="graphbar">
+        <div>
+            <canvas id="myChart"></canvas>
+          </div>
+          
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          
+          <script>
+            const ctx = document.getElementById('myChart');
+          
+            new Chart(ctx, {
+              type: 'bar',
+              data: {
+                labels:[{% for orders in order %}'{{ orders.oname }}',{% endfor %}],
+                datasets: [{
+                  label: 'Price',
+                  data:  [{% for orders in order %}'{{ orders.oprice }}',{% endfor %}],
+                  borderWidth: 1,
+                  barThickness:40,
+                  backgroundColor:('rgba(199, 125, 255,0.2)'),
+                  borderColor:('rgba(36, 0, 70,0.8)'),
+                  hoverBackgroundColor:('rgba(36, 0, 70,0.7)')
+                }]
+              },
+              options: {
+                scales: {
+                  y: {
+                    beginAtZero: true
+                  }
+                }
+              }
+            });
+          </script>
+          
+    </div>
+  </div>
+  <script>
+    if ( window.history.replaceState ) {
+window.history.replaceState( null, null, window.location.href );
+}
+</script>
+</body>
+</html>

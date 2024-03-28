@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    *{
+        padding:0px;
+        margin: 0px;
+        overflow:hidden;
+    }
+    video{
+        width:100%;    
+    }
+    .imae{
+        width:200px;
+        background-color: black;   
+        margin-top: -100px;
+        translate:32px -748px;
+    }
+    img{
+        width:200px;
+    }
+    .write{
+        font-family: "Poppins", sans-serif;
+        font-size: 76px;
+        font-weight: 600;
+        translate:20px -580px
+    }
+    .content{
+        font-family: "Poppins", sans-serif;
+        translate:20px -580px;
+        font-size: 30px; 
+        font-weight: 500;
+    }
+    .buttonmain{
+        display: flex;
+        translate: 1000px -976px;
+    }
+    .button1{
+        cursor: pointer;
+        color: black;
+        background-color: white;
+        border:3px solid black;
+        border-radius: 25px;
+        height:30px;
+        font-size: 11px;
+        width:100px;
+        margin-right: 10px;
+        letter-spacing: 1px;
+        font-family: sans-serif;
+        transition: 0.1s ease-in-out;
+    }
+    .button1:hover{
+        background-color: black;
+        color: white;
+        transition: 0.1s ease-in-out;
+    }
+</style>
+<body>
+    <div class="container">
+        <video src="/static/C:\Users\KIIT\OneDrive\Desktop\inventonew\inventonew\static\background_-_17926 (1080p).mp4" loop="" autoplay="" muted="">
+        </video>
+        <div class="imae"><img src="/static/C:\Users\KIIT\OneDrive\Desktop\inventonew\inventonew\static\dropboat-high-resolution-logo-black.png" alt=""></div>
+        <div class="write">Let's manage from here !</div>
+        <div class="content">Manage business, make requests, edit orders<br> and many more !</div>
+        <div class="buttonmain">
+            <a href="/login/"><div class="button"><button type="submit" class="button1">LOGIN</button></div></a>
+            <a href="/register_user/"><div class="button"><button type="submit" class="button1">REGISTER</button></div></a>
+        </div>
+    </div>
+</body>
+</html>

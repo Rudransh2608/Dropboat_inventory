@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/project.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<style>
+    .container{
+        margin-left: 150px;
+        margin-top: 60px;
+        width:1200px
+    }
+    #form1{
+        height:500px;
+        margin-left: -100px;
+    }
+    .heading{
+        margin-bottom: 15px;
+    }
+    .te{
+        margin-bottom: 10px;
+    }
+    .button1{
+        margin-top: 10px;
+    }
+    .bh{
+        width: 1200px;
+    }
+    #graphpie{
+        margin-left: 120px;
+        margin-top: 40px;
+        width:800px
+    }
+
+</style>
+<body>
+  {% include "nav.html" %}
+    <div class="container">
+        <div class="box" id="form1">
+            <form method="POST">
+                {% csrf_token %}
+              <div class="heading">Add Products !</div><br>
+              New Products<br>
+              <input type="text" name="numv5" class="te"><br><br>
+              Quantity (max 100) <br>
+              <input type="number" max="100" min="0" name="numv6" class="te"><br><br>
+              <button type="submit" class="button1">Add</button>
+             </form>
+        </div>
+        <div class="bh">
+        <div class="box" id="graphpie">
+            <div>
+                <canvas id="myChart"></canvas>
+              </div>
+              
+              <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+              
+              <script>
+                const ctx = document.getElementById('myChart');
+              
+                new Chart(ctx, {
+                  type: 'bar',
+                  data: {
+                    labels:[{% for products in product %}'{{ products.pname }}',{% endfor %}],
+                    datasets: [{
+                      label: 'Quantity',
+                      data:  [{% for products in product %}'{{ products.pquantity }}',{% endfor %}],
+                      borderWidth: 1,
+                      barThickness:40,
+                      backgroundColor:('rgba(89, 13, 34,0.2)'),
+                      borderColor:('rgba(89, 13, 34,0.9)'),
+                      hoverBackgroundColor:('rgba(89, 13, 34,0.7)')
+                    }]
+                  },
+                  options: {
+                    scales: {
+                      y: {
+                        beginAtZero: true
+                      }
+                    }
+                  }
+                });
+              </script>     
+    </div>
+        </div>
+    </div>
+    <div class="another">
+        <table class="table" >
+            <thead>
+              <tr>
+                <th scope="col" class="id">ID</th>
+                <th scope="col">PRODUCT</th>
+                <th scope="col">QUANTITY</th>
+                <th scope="col">DELETE</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for products in product %}
+              <tr>
+                <th scope="row">{{products.id}}</th>
+                <td>{{ products.pname }}</td>
+                <td>{{ products.pquantity }}</td>
+                <td><a class="btn btn-danger" href="/delete_product/{{products.id}}">Delete</a></td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+    </div>
+    <script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+      }
+          </script>
+</body>
+</html>
