@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    background: black;
+}
+.nav{
+    display: flex;
+    width:100%;
+    height:75px;
+    padding-top: 25px;
+    background-color: black;
+    color: bisque;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1;
+}
+img{
+    width:100%;
+    height:620px;
+    margin-top: 75px;
+    opacity: 0.2;
+}
+.heading{
+font-size: 100px;
+font-weight: 600;
+color: rgba(255, 228, 196, 0.666);
+translate:90px -350px;
+}
+.about{
+    color: bisque;
+    font-family: "Noto Sans", sans-serif;   
+    font-size: medium;
+    text-align:center;
+}
+.para{
+    display: flex;
+    color: rgba(255, 228, 196, 0.729);
+    margin-top: 120px;
+}
+#box1{
+    border: 2px solid rgba(255, 228, 196, 0.644);
+    width:600px;
+    padding: 30px;
+    text-align:justify;
+    font-size: 20px;
+    padding-top: 30px;
+    height: 656px;
+    font-family: "Poppins", sans-serif;
+    line-height: 35px;
+    margin-left: 70px;
+}
+h1{
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    overflow-y: hidden;
+    height:75px
+}
+#goal{
+    font-size: 170px;
+    margin-left: 50px;
+    margin-right: 30px;
+}
+#para2{
+    margin-top: 200px;
+}
+#box2{
+    border: 2px solid rgba(255, 228, 196, 0.644);
+    width:600px;
+    padding: 30px;
+    text-align:justify;
+    font-size: 20px;
+    padding-top: 30px;
+    height: 725px;
+    font-family: "Poppins", sans-serif;
+    line-height: 35px;
+    margin-left: 70px;
+}
+.block{
+    margin-top: 100px;
+    width:100%;
+    height:7px;
+    background-color: rgba(255, 228, 196, 0.262);
+}
+.bigcontainer{
+    font-family: sans-serif;
+    height:300px;
+    margin-top: 40px;
+    color: rgba(255, 228, 196, 0.636);
+    display: flex;
+    overflow-y: hidden;
+}
+.containerf{
+    width:760px;
+    padding-left: 200px;
+    padding-top: 30px;
+    letter-spacing: 2px;
+    overflow: hidden;
+}
+.log{
+    text-decoration: none;
+    color: rgba(255, 228, 196, 0.555);
+    letter-spacing: 0px;
+    margin-top: 100px;
+}
+.log a {
+    text-decoration: none;
+}
+.dev{
+    margin-top: 25px;
+    letter-spacing: 0px;
+}
+.fi{
+    display: flex;
+    font-size: 47px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+.icon{
+    height:100px;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-top: 180px;
+}
+a{
+    text-decoration: none;
+    color: bisque;
+}
+#image2{
+    opacity: 2;
+}
