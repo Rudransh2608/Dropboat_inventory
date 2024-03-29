@@ -45,6 +45,11 @@ We've incorporated external tools and packages to enhance user experience and st
   <p>Secure login for users with different roles (admin, manager, employee) and permissions to access specific features or data.
 Our website features strong and vigorous authorization and authentication measures for both administrators and staff members. The staff page is distinct, providing a form for submitting order requests to the administrator and a profile section where staff can update their employee profiles according to organizational requirements.<br> Conversely, administrators access a distinct section of the website, featuring the main dashboard encompassing all essential system functionalities. From here, administrators can manage order requests submitted by staff and analyze products based on various categorical and numerical metrics.</p>
   <br>
+  <li><h4>Smtp integration and App passwords 🔑🔗</h4></li
+<p>Integrated smtp protocol and external third party tools for managing app passwords .
+This functionality becomes prominent when a user forgets their password, as they can generate a new one simply by providing their registered email address and then logging in using the newly created password.<br>
+-- External third-party tools provide solutions that offer features for securely managing app passwords. These tools typically provide functionalities such as password storage, encryption, access control, and auditing to ensure the security of sensitive credentials.</p>
+    <br>
   <li><h4>Reporting and Analytics:</h4></li
 <p>Generation of reports and analytics to provide insights into inventory levels, movement, trends, and forecasting.</p>
 </ul>
