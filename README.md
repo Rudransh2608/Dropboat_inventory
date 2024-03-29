@@ -41,7 +41,7 @@ We've incorporated external tools and packages to enhance user experience and st
   The administrator could introduce new products, modify existing ones(feature yet to come), and assess their status for potential deletion as necessary.
 </p>
   <br>
-  <li></li>
+  <li>User Authentication and Permissions:</li>
 </ul>
 
 
