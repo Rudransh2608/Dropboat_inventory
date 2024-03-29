@@ -26,3 +26,6 @@ We've incorporated external tools and packages to enhance user experience and st
 <li>Tinymce</li>
 <li>Django crispy forms and bootstrap</li>
 </ul>
+<br>
+
+-- install django crispy forms<a href="https://django-crispy-forms.readthedocs.io/en/latest/">Visit W3Schools</a>
