@@ -50,8 +50,12 @@ Our website features strong and vigorous authorization and authentication measur
 This functionality becomes prominent when a user forgets their password, as they can generate a new one simply by providing their registered email address and then logging in using the newly created password.<br>
 -- External third-party tools provide solutions that offer features for securely managing app passwords. These tools typically provide functionalities such as password storage, encryption, access control, and auditing to ensure the security of sensitive credentials.</p>
     <br>
+<div align="center"><h2>Flow</h2></div><br>
+
+![USERS (3)](https://github.com/Rudransh2608/Dropboat_inventory/assets/160394256/b4896c3a-93e0-45d7-bec2-4443c12cd1b7)
+
+ 
   <li><h4>Reporting and Analytics:</h4></li
 <p>Generation of reports and analytics to provide insights into inventory levels, movement, trends, and forecasting.</p>
 </ul>
-
 
