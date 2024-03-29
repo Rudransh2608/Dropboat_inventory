@@ -12,4 +12,6 @@
 
 
 # 🌟 About the project:
-<p></p>
+<p>
+Dropboat is a robust Inventory Control Management System designed for efficient stock control and personnel management. At its core lies a Python/Django database backend that facilitates an admin interface accessible via the web. It employs protocols like SMTP and HTTP for seamless interaction with external interfaces and applications. Additionally, its versatile plugin system accommodates custom applications and extensions with ease.
+</p>
