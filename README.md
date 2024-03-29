@@ -28,4 +28,6 @@ We've incorporated external tools and packages to enhance user experience and st
 </ul>
 <br>
 
--- install django crispy forms<a href="https://django-crispy-forms.readthedocs.io/en/latest/">Visit W3Schools</a>
+-- install <a href="https://django-crispy-forms.readthedocs.io/en/latest/">django crispy forms</a><br>
+-- for integrating graphs and figures <a href="https://www.chartjs.org/">Charts.js</a><br>
+-- python -m pip install Django
