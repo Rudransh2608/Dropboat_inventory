@@ -31,3 +31,17 @@ We've incorporated external tools and packages to enhance user experience and st
 -- install <a href="https://django-crispy-forms.readthedocs.io/en/latest/">django crispy forms</a><br>
 -- for integrating graphs and figures <a href="https://www.chartjs.org/">Charts.js</a><br>
 -- python -m pip install Django
+<br><br>
+
+# 💎 Features:
+<h3>Key highlights of our system comprise:</h3>
+<ul>
+  <li>CRUD operations:</li>
+  <p>These form the fundamental functionalities of our website, encompassing product and order management. Administrators can monitor records, oversee management tasks, and conduct comparative analyses between different categories to comprehend and uphold the organization's profit/loss ratios effectively.
+  The administrator could introduce new products, modify existing ones(feature yet to come), and assess their status for potential deletion as necessary.
+</p>
+  <br>
+  <li></li>
+</ul>
+
+
