@@ -43,7 +43,7 @@ We've incorporated external tools and packages to enhance user experience and st
   <br>
   <li><h4>User Authentication and Permissions 🔐</h4></li>
   <p>Secure login for users with different roles (admin, manager, employee) and permissions to access specific features or data.
-Our website features strong and vigorous authorization and authentication measures for both administrators and staff members. The staff page is distinct, providing a form for submitting order requests to the administrator and a profile section where staff can update their employee profiles according to organizational requirements. Conversely, administrators access a distinct section of the website, featuring the main dashboard encompassing all essential system functionalities. From here, administrators can manage order requests submitted by staff and analyze products based on various categorical and numerical metrics.</p>
+Our website features strong and vigorous authorization and authentication measures for both administrators and staff members. The staff page is distinct, providing a form for submitting order requests to the administrator and a profile section where staff can update their employee profiles according to organizational requirements.<br> Conversely, administrators access a distinct section of the website, featuring the main dashboard encompassing all essential system functionalities. From here, administrators can manage order requests submitted by staff and analyze products based on various categorical and numerical metrics.</p>
   <br>
   <li><h4>Reporting and Analytics:</h4></li
 <p>Generation of reports and analytics to provide insights into inventory levels, movement, trends, and forecasting.</p>
