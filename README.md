@@ -94,7 +94,7 @@ Answer 2: This is due to the fact that the user has not provided their registere
 
 # ❤️ Support
 
-#### For support, email prathamrudransh1012@gmail.com or git us at <a href="">github/Rudransh2608</a><br>
+#### For support, email prathamrudransh1012@gmail.com or git us at <a href="https://github.com/Rudransh2608/Rudransh2608">github/Rudransh2608</a><br>
 
 
 
