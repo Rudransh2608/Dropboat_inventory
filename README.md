@@ -68,5 +68,17 @@ Real-time data visualization enhances decision-making by providing users with im
 Upon user registration, a signal is triggered to automatically generate a user profile instance in the database. This eliminates the need for users to manually create profiles after registering, simplifying the onboarding process and reducing friction for new users.<br>
 Once the user profile is generated, users have the flexibility to customize their profiles and add additional details as needed. Users can access their profile page within the application and update information such as residential address, bio, interests, Phone and any other fields provided by the organization.
 </ul>
+<br>
+
+# ❓FAQ
+
+#### Question 1: Upon logging in a new user, the page cannot be located. ?
+
+Answer 1: This occurs because the page for the logged-out user is not refreshed. Once the previous user's page is refreshed, the new user will be automatically logged in !!!
+
+#### Question 2: The email containing app passwords is not being received. 
+
+Answer 2: This is due to the fact that the user has not provided their registered email address for the password reset.
+
 
 
