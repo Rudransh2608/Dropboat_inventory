@@ -56,6 +56,10 @@ This functionality becomes prominent when a user forgets their password, as they
 
  
   <li><h4>Reporting and Analytics:</h4></li
-<p>Generation of reports and analytics to provide insights into inventory levels, movement, trends, and forecasting.</p>
+<p>Generation of reports(feature yet to come) and analytics to provide insights into inventory levels, movement, trends, and casting.
+We've incorporated a variety of graphical representations, encompassing line graphs, bar graphs, and pie charts, to elevate our analytics and reporting capabilities.
+Dynamically rendered graphs with real-time stock reporting and product management scanning represent a cutting-edge feature of our system. This capability allows for the creation and display of graphical representations of pertinent data, such as inventory levels and product management activities, that are continually updated to reflect the most current information available.<br> <br>
+Real-time data visualization enhances decision-making by providing users with immediate insights into inventory performance and product management activities. Users can quickly identify trends, anomalies, or issues within the inventory system and take proactive measures to address them.
+</p>
 </ul>
 
