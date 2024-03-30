@@ -63,7 +63,10 @@ Real-time data visualization enhances decision-making by providing users with im
 </p>
 <br>
 <li><h4>User Profile and django signals 👤</h4></li>
-<p>We've implemented Django signals to automatically generate a user profile upon registration, allowing users to subsequently customize their profiles and add additional details as required by the organization. </p>
+<p>We've implemented Django signals to automatically generate a user profile upon registration, allowing users to subsequently customize their profiles and add additional details as required by the organization. Django signals enable decoupled and modular communication between different components of a Django application, allowing for the execution of custom logic in response to predefined events. </p>
+<br>
+Upon user registration, a signal is triggered to automatically generate a user profile instance in the database. This eliminates the need for users to manually create profiles after registering, simplifying the onboarding process and reducing friction for new users.<br>
+Once the user profile is generated, users have the flexibility to customize their profiles and add additional details as needed. Users can access their profile page within the application and update information such as residential address, bio, interests, Phone and any other fields provided by the organization.
 </ul>
 
 
