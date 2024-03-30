@@ -90,10 +90,11 @@ Answer 1: This occurs because the page for the logged-out user is not refreshed.
 
 Answer 2: This is due to the fact that the user has not provided their registered email address for the password reset.
 <br> 
+<br>
 
 # ❤️ Support
 
-#### For support, email fake@fake.com or join our Slack channel.
+#### For support, email prathamrudransh1012@gmail.com or join our git us at github.com/Rudransh2608.
 
 
 
