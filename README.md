@@ -70,6 +70,9 @@ Once the user profile is generated, users have the flexibility to customize thei
 </ul>
 <br>
 
+# ✨ Here's a glimpse of the administrator dashboard and the staff Page :
+<br>
+  
 # ❓FAQ
 
 #### Question 1: Upon logging in a new user, the page cannot be located. ?
