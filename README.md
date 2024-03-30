@@ -96,6 +96,14 @@ Answer 2: This is due to the fact that the user has not provided their registere
 
 #### For support, email prathamrudransh1012@gmail.com or git us at <a href="https://github.com/Rudransh2608/Rudransh2608">github/Rudransh2608</a><br>
 
+<div align="center">
+<h3>Connect with me:</h3>
+<p>
+<a href="https://linkedin.com/in/rudransh-pratham-967bb0255" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="rudransh-pratham-967bb0255" height="30" width="40" /></a>
+<a href="https://instagram.com/ruddyp1012" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="ruddyp1012" height="30" width="40" /></a>
+</p>
+</div>
+
 
 
 
