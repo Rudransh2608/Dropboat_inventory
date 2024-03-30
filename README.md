@@ -70,7 +70,14 @@ Once the user profile is generated, users have the flexibility to customize thei
 </ul>
 <br>
 
-# ✨ Here's a glimpse of the administrator dashboard and the staff Page :
+<h3> ✨ Here's a glimpse of the administrator dashboard and the staff Page :</h3>
+<h1></h1>
+<br>
+
+![Screenshot (89)](https://github.com/Rudransh2608/Dropboat_inventory/assets/160394256/441adbdd-5d3d-492b-8f4a-e724280a0a32)
+<br>
+
+![Screenshot (90)](https://github.com/Rudransh2608/Dropboat_inventory/assets/160394256/6f0957c4-a2cd-498c-9336-e316e3ce9bb1)
 <br>
   
 # ❓FAQ
@@ -82,6 +89,7 @@ Answer 1: This occurs because the page for the logged-out user is not refreshed.
 #### Question 2: The email containing app passwords is not being received. 
 
 Answer 2: This is due to the fact that the user has not provided their registered email address for the password reset.
+
 
 
 
