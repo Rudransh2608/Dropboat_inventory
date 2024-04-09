@@ -70,8 +70,8 @@ Once the user profile is generated, users have the flexibility to customize thei
 <br>
 
 <li><h4>Report Generation 📁</h4></li>
-<p> With our integrated report generation feature, you can effortlessly generate detailed reports on various aspects of your inventory management directly from within our website.
-Understanding importance of flexibility and convenience when it comes to accessing and sharing your reports, we've made it incredibly simple to download your generated reports in PDF format. With just a few clicks, you can have a professional-looking PDF document containing all your inventory insights ready to go, whether for internal analysis, sharing with stakeholders, or printing for your records.
+<p> With our integrated report generation feature, you can effortlessly generate detailed reports on various aspects of your inventory management directly from within our website.</p>
+<p>Understanding importance of flexibility and convenience when it comes to accessing and sharing your reports, we've made it incredibly simple to download your generated reports in PDF format. With just a few clicks, you can have a professional-looking PDF document containing all your inventory insights ready to go, whether for internal analysis, sharing with stakeholders, or printing for your records.
 Data security and privacy remain our top priorities. Our integrated report generation feature is built with robust security measures to safeguard your sensitive information and ensure the integrity of your data.</p>
 </ul>
 <br>
