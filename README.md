@@ -65,14 +65,16 @@ Real-time data visualization enhances decision-making by providing users with im
 <li><h4>User Profile and django signals 👤</h4></li>
 <p>We've implemented Django signals to automatically generate a user profile upon registration, allowing users to subsequently customize their profiles and add additional details as required by the organization. Django signals enable decoupled and modular communication between different components of a Django application, allowing for the execution of custom logic in response to predefined events. </p>
 <br>
-Upon user registration, a signal is triggered to automatically generate a user profile instance in the database. This eliminates the need for users to manually create profiles after registering, simplifying the onboarding process and reducing friction for new users.<br>
-Once the user profile is generated, users have the flexibility to customize their profiles and add additional details as needed. Users can access their profile page within the application and update information such as residential address, bio, interests, Phone and any other fields provided by the organization.
-</ul>
+<p>Upon user registration, a signal is triggered to automatically generate a user profile instance in the database. This eliminates the need for users to manually create profiles after registering, simplifying the onboarding process and reducing friction for new users.<br>
+Once the user profile is generated, users have the flexibility to customize their profiles and add additional details as needed. Users can access their profile page within the application and update information such as residential address, bio, interests, Phone and any other fields provided by the organization.</p>
 <br>
+
 <li><h4>Report Generation 📁</h4></li>
 <p> With our integrated report generation feature, you can effortlessly generate detailed reports on various aspects of your inventory management directly from within our website.
-Understanding importance of flexibility and convenience when it comes to accessing and sharing your reports, we've made it incredibly simple to download your generated reports in PDF format. With just a few clicks, you can have a professional-looking PDF document containing all your inventory insights ready to go, whether for internal analysis, sharing with stakeholders, or printing for your records.</p>
-
+Understanding importance of flexibility and convenience when it comes to accessing and sharing your reports, we've made it incredibly simple to download your generated reports in PDF format. With just a few clicks, you can have a professional-looking PDF document containing all your inventory insights ready to go, whether for internal analysis, sharing with stakeholders, or printing for your records.
+Data security and privacy remain our top priorities. Our integrated report generation feature is built with robust security measures to safeguard your sensitive information and ensure the integrity of your data.</p>
+</ul>
+<br>
 <h3> ✨ Here's a glimpse of the Administrator dashboard and the Staff page :</h3>
 <h1></h1>
 <br>
