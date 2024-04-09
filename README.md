@@ -1,8 +1,10 @@
 <div align="center">
-  <img src="https://github.com/Rudransh2608/Dropboat_inventory/assets/160394256/5b6318f3-0a9e-4367-83d9-022af9490fbc" alt="InvenTree logo" width="400" height="auto" />
-  <br><br>
+  
+ 
+![logo-no-background](https://github.com/Rudransh2608/Dropboat_inventory/assets/160394256/17f099c3-a3c0-4867-a820-a6de794dca3e)
   <h1></h1>
   <p>Inventory Management System</p>
+  <br>
   <br>
   
 # 💻 Tech Stack:
@@ -13,7 +15,8 @@
 
 # 🌟 About the project:
 <p>
-Dropboat is a robust Inventory Control Management System designed for efficient stock control and personnel management. At its core lies a Python/Django database backend that facilitates an admin interface accessible via the web. It employs protocols like SMTP and HTTP for seamless interaction with external interfaces and applications. Additionally, its versatile plugin system accommodates custom applications and extensions with ease.
+Dropboat is a robust Inventory Control Management System designed for efficient stock control and personnel management. At its core lies a Python/Django database backend that facilitates an admin interface accessible via the web. It employs protocols li![logo-no-background](https://github.com/Rudransh2608/Dropboat_inventory/assets/160394256/0d98fd7f-ad0f-486d-b258-f73d8f22e8f4)
+ke SMTP and HTTP for seamless interaction with external interfaces and applications. Additionally, its versatile plugin system accommodates custom applications and extensions with ease.
 </p>
 <br>
 
@@ -108,7 +111,3 @@ Answer 2: This is due to the fact that the user has not provided their registere
 <a href="https://instagram.com/ruddyp1012" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="ruddyp1012" height="30" width="40" /></a>
 </p>
 </div>
-
-
-
-
