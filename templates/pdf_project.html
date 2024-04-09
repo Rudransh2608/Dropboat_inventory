@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudransh's pdf</title>
+    <style>
+      table{
+        border: 1px !important;
+      }
+      th,td{
+        padding:10px !important;
+        background-color:rgb(191, 140, 236) !important;
+        color: white !important;
+        font-size: 12px;
+      }
+      #new{
+        background-color: rgb(245, 235, 249);
+        color: black;
+        font-weight: 200;
+      }
+
+    </style>
+</head>
+<body>
+    <table class="table" border="1px">
+        <thead>
+          <tr>
+            <th scope="col" height="100"><h1>ID</h1></th>
+            <th scope="col"><h1>Name</h1></th>  
+            <th scope="col"><h1>Quantity</h1></th>
+            <th scope="col"><h1>Client</h1></th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for n in project_obj %}
+          <tr>
+            <th scope="row" height="1000" id="new">{{n.id}}</th>
+            <th id="new">{{n.name}}</th>
+            <th id="new">{{n.quantity}}</th>
+            <th id="new">{{n.clname}}</th>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table><br>
+</body>
+</html>
