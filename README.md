@@ -69,6 +69,9 @@ Upon user registration, a signal is triggered to automatically generate a user p
 Once the user profile is generated, users have the flexibility to customize their profiles and add additional details as needed. Users can access their profile page within the application and update information such as residential address, bio, interests, Phone and any other fields provided by the organization.
 </ul>
 <br>
+<li><h4>Report Generation 📁</h4></li>
+<p> With our integrated report generation feature, you can effortlessly generate detailed reports on various aspects of your inventory management directly from within our website.
+Understanding importance of flexibility and convenience when it comes to accessing and sharing your reports, we've made it incredibly simple to download your generated reports in PDF format. With just a few clicks, you can have a professional-looking PDF document containing all your inventory insights ready to go, whether for internal analysis, sharing with stakeholders, or printing for your records.</p>
 
 <h3> ✨ Here's a glimpse of the Administrator dashboard and the Staff page :</h3>
 <h1></h1>
